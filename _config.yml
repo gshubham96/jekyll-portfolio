@@ -1,14 +1,12 @@
-name: Jekyll Themes
-url: http://matt.harzewski.com
-description: Insert tagline here
+# Build settings
 
-permalink: /themes/:title/
+port: 4000
+markdown:  kramdown
+permalink: /:title
+plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 
-plugins: [jekyll-paginate]
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
-highlighter: pygments
-paginate: 20
-
-markdown: kramdown
-
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
+title:		   "Portfolio Jekyll Theme"
+description: "Powered by Jekyll and GitHub Pages"
+author:      "Paul Le"
